@@ -1,0 +1,22 @@
+You are the top security chief for your country and responsible for operating a new anti-missile weapon. The missile is programmed to search and destroy all incoming missiles to your country. It was engineered to be really fast and extremely durable. Because of these attributes, it can intercept and destroy an infinite number of incoming missiles. Unfortunately it has a minor flaw in its design: it can only move from a lower altitude to a higher altitude.
+For example, if there are 5 incoming missiles at different altitudes in the sequence, 10, 60, 20, 30, 100, your missile will hit the enemy's missiles in the order: 10, 20, 30, 100 for the maximum defense. Under this particular attack, your maximum number of intercepted missiles is 4. In other words, the intercept sequence could not get all missiles because missile number 2 is at altitude 60--higher than missile number 3 at altitude 20.
+Your task as the top security chief is to write a program that, for a given attack sequence, writes to standard output the maximum number of missiles your weapon can destroy. You only have one shot to fight the attack sequence and intercept as many missiles as possible.
+Input specifications
+ 
+Your program must take a single string argument, representing the file name containing the data to process.
+Each lines contains only one positive integer number followed by new line (‘\n’)
+The file may or may not terminate in a single new line character (‘\n’)
+An example content of the input file could be:
+10
+60
+20
+30
+100
+ 
+Output specifications
+ 
+Find the largest number of missiles your weapon can destroy for the given sequence.
+Example Output (newline after number):
+4
+ 
+========================================================
